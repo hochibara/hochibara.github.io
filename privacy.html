@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy - Capybara Talks</title>
+<style>
+  :root { color-scheme: light dark; --text: #1d1d1f; --muted: #555; --bg: #fff; --link: #0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --text: #ececec; --muted: #b0b0b0; --bg: #161616; --link: #8ab4f8; } }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem; }
+  h1 { font-size: 2rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; }
+  p.date { color: var(--muted); margin-top: 0; }
+  a { color: var(--link); }
+  li { margin: .3rem 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="date">Capybara Talks. Effective 19 October 2026.</p>
+
+  <p>Capybara Talks ("the app") is a personal desktop app for macOS and
+  Windows for making narrated videos. This policy explains what the app
+  receives from Google when you connect your Google Drive, how it uses and
+  stores it, how long it keeps it, and how to remove its access. Connecting
+  Google Drive is optional; the app works without it.</p>
+
+  <h2>What the app accesses</h2>
+  <ul>
+    <li><strong>Only the Drive files the app works with.</strong> The app asks
+      for Google's <code>drive.file</code> permission, which Google shows as
+      "See, edit, create, and delete only the specific Google Drive files you
+      use with this app". That covers the files the app creates, and files you
+      choose to open with it; the app offers no way to open other files, so in
+      practice it reaches only its own backups. It cannot see, list, open,
+      change or delete any other file or folder in your Drive, such as your
+      photos or documents. Google enforces this limit.</li>
+    <li><strong>The email address of the Google account you connect.</strong>
+      The app reads it from Drive's own account information (it asks for no
+      separate email permission) and keeps only the address, not your name or
+      photo, so it can note which account holds each backup.</li>
+  </ul>
+  <p>The app does not ask for your Gmail, Contacts, Calendar, Google Photos or
+  any other Google data.</p>
+
+  <h2>How the app uses it</h2>
+  <ul>
+    <li>It uploads backup copies of your project's videos and audio to your
+      Drive only when you choose to back up, after showing how many files and
+      how much data will be uploaded.</li>
+    <li>When one of those files is missing on one of your computers, it can
+      download the backup from your Drive, and uses it only after checking
+      that it matches the original exactly.</li>
+    <li>For each backup, it records the Drive file ID, a link to the file, the
+      account's email address, the upload time, the size and a checksum in
+      your project, so your other computers can find the backup. The link
+      opens only for your account: the app never shares a backup with anyone
+      or makes it public.</li>
+  </ul>
+
+  <h2>Where it is stored</h2>
+  <ul>
+    <li><strong>Your Google sign-in</strong> is saved only in your operating
+      system's secure credential store (the Keychain on a Mac, Credential
+      Manager on Windows), on each computer where you connect. It is never
+      written to the app's files or logs.</li>
+    <li><strong>Files</strong> travel directly between your computer and
+      Google's servers over encrypted (HTTPS) connections. The app has no
+      server of its own.</li>
+    <li><strong>The backup records</strong> are saved in your projects on your
+      computers. The app also copies them, with the rest of each project, to
+      the private GitHub repository it uses to sync your projects between your
+      computers.</li>
+    <li><strong>Files downloaded from your Drive</strong> are kept in the
+      app's media cache, inside the app's data folder on that computer.</li>
+    <li><strong>The app's logs</strong> on your computer may name backup files
+      and their Drive file IDs.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>The app does not send data it receives from Google to its developer. It
+  shares it only as described above: the backup records sync with your
+  projects to your private GitHub repository. It does not sell the data or
+  use it for advertising or analytics.</p>
+  <p>Files restored from your Drive are your project's videos and audio. No
+  feature of the app sends them to an outside service; the app's AI features
+  work on script text, prompts and pictures from your own library, not on
+  your backups. If a future version adds such a feature, this policy is
+  updated first and the app asks for your agreement before it sends a
+  file.</p>
+  <p>Capybara Talks does not use data received from Google Workspace APIs,
+  including Google Drive, to develop, improve or train generalized or
+  non-personalized AI or machine-learning models, and does not transfer it to
+  anyone for that purpose.</p>
+
+  <h2>How long data is kept and how to delete it</h2>
+  <p>The app has no server, so its developer holds none of this data. It is
+  kept only on your computers, in your Google Drive and in your private
+  GitHub repository, and you can delete it there.</p>
+  <ul>
+    <li><strong>Your Google sign-in</strong> stays in your computer's
+      credential store until you disconnect Google Drive in the app, which
+      deletes it from that computer. If you have removed the app's access in
+      your Google Account, the app deletes the saved sign-in the next time it
+      tries to use it. Each computer keeps its own sign-in.</li>
+    <li><strong>Remove the app's access</strong> at any time: open the
+      <a href="https://myaccount.google.com/connections">third-party apps and
+      services page of your Google Account</a>, choose Capybara Talks and
+      remove its access
+      (<a href="https://support.google.com/accounts/answer/13533235">Google's
+      steps</a>). After that, the app can no longer reach your Drive from any
+      of your computers.</li>
+    <li><strong>Backups in your Drive</strong> stay until you delete them in
+      Google Drive, like any other file. Removing the app's access does not
+      delete them.</li>
+    <li><strong>Files downloaded from your Drive</strong> stay in the app's
+      media cache on that computer until you delete them.</li>
+    <li><strong>Backup records</strong>, including the account's email
+      address, stay in your project until you delete the project. Because
+      projects sync through a Git repository, earlier versions stay in that
+      repository's history until you remove them there.</li>
+  </ul>
+  <p>For questions about your data or deleting it, write to the contact
+  address below.</p>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>Capybara Talks' use and transfer to any other app of information received
+  from Google APIs will adhere to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google
+  API Services User Data Policy</a>, including the Limited Use
+  requirements.</p>
+
+  <h2>Changes</h2>
+  <p>Before the app uses data from Google in a new way, this policy is
+  updated and the app asks for your agreement. Other changes are posted on
+  this page with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:storyofcapybara@gmail.com">storyofcapybara@gmail.com</a>.
+  Home page: <a href="./">Capybara Talks</a>.</p>
+</main>
+</body>
+</html>

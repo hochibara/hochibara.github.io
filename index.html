@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capybara Talks</title>
+<style>
+  :root { color-scheme: light dark; --text: #1d1d1f; --muted: #555; --bg: #fff; --link: #0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --text: #ececec; --muted: #b0b0b0; --bg: #161616; --link: #8ab4f8; } }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem; }
+  h1 { font-size: 2rem; margin: 0 0 .5rem; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; }
+  p.lead { color: var(--muted); margin-top: 0; }
+  a { color: var(--link); }
+  footer { margin-top: 3rem; font-size: .9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Capybara Talks</h1>
+  <p class="lead">A personal desktop app for making narrated videos.</p>
+
+  <p>Capybara Talks is a desktop app for macOS and Windows, made by its
+  developer for their own video work. It is not offered for download. It
+  helps take a video from script to cut: reviewing the script, arranging
+  clips into groups on a timeline, writing narration scripts, and generating
+  narration and background music with AI voice and music services. Subtitle
+  editing and video export are being added.</p>
+
+  <h2>How it uses Google Drive</h2>
+  <p>Google Drive is optional. After you connect your Google account and
+  choose to back up, the app uploads backup copies of your project's videos
+  and audio to your own Google Drive. On another of your computers, it can
+  download those backups when a file is missing there.</p>
+  <p>Google shows the permission the app asks for as "See, edit, create, and
+  delete only the specific Google Drive files you use with this app" (the
+  <code>drive.file</code> permission). In practice, these are the backup
+  files the app created itself. It cannot see, open or change any other file
+  in your Drive, such as your photos or documents.</p>
+
+  <h2>Privacy</h2>
+  <p>Read the <a href="privacy.html">privacy policy</a> for what the app
+  accesses, where it keeps it, how long it keeps it and how to remove its
+  access.</p>
+
+  <footer>
+    Contact: <a href="mailto:storyofcapybara@gmail.com">storyofcapybara@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
